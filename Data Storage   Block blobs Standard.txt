@@ -1,0 +1,32 @@
+Azure that provides a centralized location for storing and managing data in the cloud. It allows you to securely store and access various types of data, including files, blobs, queues, and tables, across all Azure services.
+Blob Storage is essentially a service for storing large amounts of text or binary data, such as images, audio, video files, and other types of unstructured data.
+Block blobs: Used for storing text and binary data, up to about 4.75 TiB in size. They are composed of blocks, which are managed individually.
+Append blobs: Optimized for append operations, making them ideal for scenarios such as logging data from virtual machines
+Page blobs: Used primarily for VHD (Virtual Hard Disk) files that serve as disks for Azure virtual machines. They can be up to 8 TiB in size.
+Azure File Storage provides fully managed file shares in the cloud that are accessible via the SMB (Server Message Block) and NFS (Network File System) protocols
+Azure Queue Storage is a service for storing large numbers of messages. These messages can be accessed from anywhere in the world via authenticated HTTP or HTTPS calls. Queue Storage is often used to create a reliable messaging between application components or microservices.
+Azure Table Storage is a NoSQL data with a schema-less design.
+
+Site Recovery replicates workloads running on physical and virtual machines (VMs) from a primary site to a secondary location. When an outage occurs at your primary site, you fail over to a secondary location, and access apps from there.
+
+Load balancer           scope
+Frontend IP config      condition signal log source
+Backend Pools           action group
+Health Probes
+Load Balancing rule
+Inbound NAT Rules
+
+Implement Tagging and Cost Management
+Licensing Costs
+Auto scaling for paas
+Vm Shutdown enable schedule
+Removed Unused and detached Disks, 
+retenstion period for backup restore point, law logs and snapshots.
+perefer the serverless model
+Leverage Spot Instances
+Use Reserved Instances and Savings Plans
+Optimize Storage Costs 
+Rightsizing Resources SKU tier based on the usage
+Finally conduct monthly costing review based on the checklist
+Invoke-Command -ComputerName   (Get-Content C:\it\servers.txt) -scriptblock {hostname} -credential cloudops_admin | Out-File -LiteralPath  "C:\it\test.txt
+
